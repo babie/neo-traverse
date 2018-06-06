@@ -1,0 +1,10 @@
+{
+  "name": "neo-traverse",
+  "version": "0.1.0",
+  "description": "Traverse and transform objects by visiting every node on a recursive walk without `this`!",
+  "main": "index.js",
+  "repository": "git@github.com:babie/neo-traverse.git",
+  "author": "babie <babie.wildheart@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
