@@ -1,0 +1,21 @@
+{
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "plugins": ["prettier"],
+  "extends": [
+    "tslint-config-airbnb",
+    "tslint-config-standard",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
+  },
+  "rules": {
+    "prettier": [
+      true,
+      {
+        "singleQuote": true,
+        "semi": false
+      }
+    ]
+  }
+}
