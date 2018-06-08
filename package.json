@@ -6,5 +6,13 @@
   "repository": "git@github.com:babie/neo-traverse.git",
   "author": "babie <babie.wildheart@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "devDependencies": {
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.1"
+  }
 }
