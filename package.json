@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Traverse and transform objects by visiting every node on a recursive walk without `this`!",
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": "git@github.com:babie/neo-traverse.git",
   "author": "babie <babie.wildheart@gmail.com>",
   "license": "MIT",
@@ -10,9 +11,9 @@
   "scripts": {
     "watch": "run-p watch:build watch:test",
     "watch:build": "tsc -p tsconfig.json --watch",
-    "watch:test": "mocha --require espower-typescript/guess './**/*test.ts' --watch",
+    "watch:test": "mocha --require espower-typescript/guess --watch 'test/**/*.ts'",
     "build": "tsc -p tsconfig.json",
-    "test": "mocha --require espower-typescript/guess './**/*test.ts'",
+    "test": "mocha --require espower-typescript/guess 'test/**/*.ts'",
     "lint": "tslint -p tsconfig.json"
   },
   "directories": {

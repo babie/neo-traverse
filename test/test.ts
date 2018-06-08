@@ -5,5 +5,5 @@ import { traverse } from '../'
 
 it('return original object', () => {
   const obj = { foo: 'bar' }
-  assert(traverse(obj) === { hoge: 'fuga' })
+  assert(traverse(obj) === { ok: 'yes' })
 })
