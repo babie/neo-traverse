@@ -11,7 +11,7 @@
   "scripts": {
     "watch": "run-p watch:build watch:test",
     "watch:build": "tsc -p tsconfig.json --watch",
-    "watch:test": "mocha --require espower-typescript/guess --watch 'test/**/*.ts'",
+    "watch:test": "mocha --require espower-typescript/guess --watch-extensions ts,tsx --watch 'test/**/*.ts'",
     "build": "tsc -p tsconfig.json",
     "test": "mocha --require espower-typescript/guess 'test/**/*.ts'",
     "lint": "tslint -p tsconfig.json"
