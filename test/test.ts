@@ -3,7 +3,10 @@ const assert = powerAssert
 
 import { traverse } from '../'
 
-it('return original object', () => {
-  const obj = { foo: 'bar' }
-  assert(traverse(obj) === obj)
+it('get value', () => {
+  const bar: symbol = Symbol('bar')
+  const obj = { foo: [{}, { [bar]: 'baz' }] }
+
+  assert(traverse(obj).get('foo', 0, bar) === undefined)
+  assert(traverse(obj).get('foo', 1, bar) === 'baz')
 })
