@@ -9,11 +9,11 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "watch": "run-p watch:build watch:test",
-    "watch:build": "tsc -p tsconfig.json --watch",
-    "watch:test": "mocha --require espower-typescript/guess --watch-extensions ts,tsx --watch 'test/**/*.ts'",
     "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json --watch",
     "test": "mocha --require espower-typescript/guess 'test/**/*.ts'",
+    "test:watch": "mocha --require espower-typescript/guess --watch-extensions ts,tsx --watch 'test/**/*.ts'",
+    "watch": "run-p build:watch test:watch",
     "lint": "tslint -p tsconfig.json"
   },
   "directories": {
